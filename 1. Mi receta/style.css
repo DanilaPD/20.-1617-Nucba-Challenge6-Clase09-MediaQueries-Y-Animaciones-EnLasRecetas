@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@200&display=swap");
+
+body {
+    background-image: url(./Assets/6.\ Fondo.PNG);
+    padding: 0 3%;
+}
+
+h1 {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size: 4em;
+}
+
+nav {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size: 1em;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    margin: -1% -4%;
+    display: flex;
+}
+
+.logo {
+    height: 3em;
+    margin-top: 00.8em;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 10px 5px 5px 5px (0, 0, 0, 0.096);
+    border-radius: 40px;
+    align-items: center;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size: 1em;
+    position: sticky;
+}
+
+.header img {
+    width: 41%;
+    margin: 2%;
+    justify-content: left;
+}
+
+.header .headerTexto {
+    flex-direction: column;
+    display: flex;
+    margin: 0 5%;
+    background-color: white;
+    box-shadow: 10px 5px 5px 5px (0, 0, 0, 0.096);
+    border-radius: 40px;
+    align-items: center;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size: 1.1em;
+    position: sticky;
+}
+
+.ingredientes {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size: 1.1em;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    flex-direction: column;
+    margin: 2% 0;
+    box-shadow: 10px 5px 5px 5px (0, 0, 0, 0.096);
+    border-radius: 40px;
+    align-items: center;
+    position: sticky;
+}
+
+.pasos {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size: 1.1em;
+    display: flex;
+    background-color: white;
+    padding: 2%;
+    justify-content: left;
+    flex-direction: column;
+    margin: 2% 0;
+    box-shadow: 10px 5px 5px 5px (0, 0, 0, 0.096);
+    border-radius: 40px;
+    align-items: center;
+    position: sticky;
+}
+
+.pasos p {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size: 1em;
+    margin: 2%;
+    justify-content: left;
+}
+
+.pasos img {
+    flex-direction: row;
+    width: 322px;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px 5px (0, 0, 0, 0.226);
+    margin-left: 440px;
+}
+
+.copy {
+    padding: 1%;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-size: 2em;
+    margin: auto;
+}
+
+.copy a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.copy a:hover {
+    color: white;
+}
+
+@media (max-width:1600px) {
+    nav img {
+        margin: 1% 2% 1% 2%;
+    }
+
+    nav h2 {
+        margin: 2% 0 2% -1%;
+    }
+
+    h1 {
+        margin: 5% 0 4% 29%;
+    }
+
+    .header {
+        width: 67%;
+        margin: 0 1% 8% 17%;
+    }
+
+    .header p {
+        font-size: 1.3em;
+    }
+
+    .ingredientes {
+        font-size: 1.3em;
+        width: 60%;
+        margin: 0 0 0 20%;
+    }
+
+    .pasos {
+        font-size: 1.3em;
+        width: 60%;
+        margin: 6% 0 0 18%;
+    }
+
+    .img {
+        margin: 3% 0 2% -16%;
+    }
+
+    footer {
+        margin: 2% 0 0 -4%;
+    }
+
+}
+
+@media (max-width:1440px) {
+    nav img {
+        margin: 1% 1% 1% 1%;
+    }
+
+    nav h2 {
+        margin: 1% 0 1% 1%;
+    }
+
+    h1 {
+        padding: 2% 2%;
+    }
+
+    .header {
+        width: 67%;
+        margin: -2% 1% 8% 21%;
+    }
+
+    .ingredientes {
+        width: 60%;
+        margin: -3% 0 0 25%;
+    }
+
+    .pasos {
+        width: 60%;
+        margin: 4% 0 0 23%;
+    }
+
+    .img {
+        margin: 3% 0 2% -24%;
+    }
+
+    footer {
+        margin: 3% 0 0 -4%;
+    }
+}
+
+@media (max-width:1024px) {
+    nav img {
+        margin: 1% 1% 1% 1%;
+    }
+
+    nav h2 {
+        margin: 2% 0 1% 0;
+    }
+
+    h1 {
+        margin: 3% 1% 3% 16%;
+    }
+
+    .header {
+        width: 67%;
+        margin: -2% 0 0 18%;
+        font-size: 0.7em;
+    }
+
+    .ingredientes {
+        width: 60%;
+        margin: 4% 0 0 21%;
+        font-size: 0.8em;
+    }
+
+    .pasos {
+        width: 79%;
+        margin: 4% 0 0 9%;
+        font-size: 0.8em;
+    }
+
+    .img {
+        margin: 3% 0 2% -28%;
+    }
+
+    footer {
+        margin: 5% 0 0 -4%;
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width:768px) {
+    nav {
+        margin: -4% -5% 0 -5%;
+    }
+
+    nav img {
+        margin: 0 1% 0 1%;
+    }
+
+    nav h2 {
+        margin: 3% 0 2% 0;
+    }
+
+    h1 {
+        margin: 4% 0 3% 18%;
+        font-size: 2.9em;
+    }
+
+    .header {
+        width: 53%;
+        margin: -3% 0 0 25%;
+        font-size: 0.6em;
+    }
+
+    .ingredientes {
+        width: 61%;
+        margin: 5% 0 0 21%;
+        font-size: 0.8em;
+        text-align: start;
+    }
+
+    .pasos {
+        width: 64%;
+        margin: 4% 0 0 17%;
+        font-size: 0.8em;
+        display: block;
+    }
+
+    .img {
+        margin: 3% 0 2% -83%;
+    }
+
+    footer {
+        margin: 7% 0 0 -4%;
+        font-size: 0.5em;
+    }
+}
+
+@media (max-width:480px) {
+    nav {
+        margin: -6% -12% 0 -6%;
+    }
+
+    nav img {
+        margin: 0 1% 2% 2%;
+    }
+
+    nav h2 {
+        margin: 4% 0 2% 0%;
+    }
+
+    h1 {
+        margin: 6% 0 6% 17%;
+        font-size: 2em;
+    }
+
+    .header {
+        width: 85%;
+        margin: -5% 0 0 12%;
+        font-size: 0.6em;
+    }
+
+    .ingredientes {
+        width: 99%;
+        margin: 5% 0 0 4%;
+        font-size: 0.8em;
+        text-align: start;
+    }
+
+    .pasos {
+        width: 100%;
+        margin: 4% 0 0 1%;
+        font-size: 0.8em;
+        display: block;
+    }
+
+    .img {
+        margin: 4% 0 3% -88%;
+    }
+
+    footer {
+        margin: 7% 0 0 -4%;
+        font-size: 0.5em;
+    }
+}
+
+@media (max-width:360px) {
+    nav {
+        margin: -4% -51% -2% -6%;
+    }
+
+    nav img {
+        margin: 0 1% 3% 2%;
+    }
+
+    nav h2 {
+        margin: 5% 0 0 1%;
+        font-size: 1.2em;
+    }
+
+    h1 {
+        margin: 7% 0 7% 46%;
+        font-size: 2em;
+    }
+
+    .header {
+        width: 125%;
+        margin: -4% 0 0 10%;
+        font-size: 0.8em;
+    }
+
+    .ingredientes {
+        width: 133%;
+        margin: 5% 0 0 6%;
+        font-size: 0.9em;
+        text-align: start;
+    }
+
+    .pasos {
+        width: 140%;
+        margin: 4% 0 0 1%;
+        font-size: 1em;
+        display: block;
+        text-align: center;
+    }
+
+    .img {
+        margin: 4% 0 3% -97%;
+    }
+
+    footer {
+        margin: 13% 0 0 -6%;
+        font-size: 0.5em;
+        text-align: center;
+    }
+}

@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&family=Dancing+Script:wght@600;700&display=swap');
+
+body {
+    background-image: url('./assets/bokeh.jpg');
+    /* se acuerdan cómo era el tema con el padding? arriba, costados */
+    padding: 0 3%;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+}
+
+.donations {
+    font-size: 2em;
+    background-color: bisque;
+}
+
+/* Sticky  */
+nav {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.699);
+    position: sticky;
+    top: 0;
+    margin: -1% -4%;
+    display: flex;
+}
+
+.fixed {
+    position: fixed;
+    margin: -20%, 16%;
+    /* z-index nos pone encima de otras cosas. */
+    z-index: 3;
+}
+
+.logo {
+    height: 2.5em;
+    margin-top: 0.5em;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.699);
+    box-shadow: 10px 5px 5px 5px rgba(0, 0, 0, 0.096);
+    border-radius: 40px;
+    align-items: center;
+    font-family: 'STIX Two Math', serif;
+    font-size: 1.1em;
+}
+
+.header img {
+    width: 60%;
+    margin: 2%;
+    /* box shadow es así: eje x, eje y, blur, spread, color */
+}
+
+.header .headerTexto {
+    flex-direction: column;
+    display: flex;
+    margin: 0 5%;
+}
+
+.pasos {
+    display: flex;
+    margin: 2% 15%;
+    background-color: rgba(255, 255, 255, 0.575);
+    padding: 2%;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.pasos p {
+    font-family: 'STIX Two Math', serif;
+    font-size: 1em;
+    margin: 2%;
+}
+
+.pasos img {
+    /* este es uno de los casos en que deberíamos usar pixeles... cada img es de diferente tamaño! */
+    width: 200px;
+    border-radius: 40px;
+    /* box shadow es así: eje x, eje y, blur, spread, color */
+    box-shadow: 10px 5px 5px 5px rgba(0, 0, 0, 0.226);
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+}
+
+.copy {
+    padding: 1%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    margin: auto;
+}
+
+.copy a {
+    text-decoration: none;
+    color: rgb(250, 121, 121);
+    font-weight: 700;
+}
+
+.copy a:hover {
+    color: rgb(180, 0, 0);
+}
+
+@media (max-width:768px) {
+    .donations {
+        margin: 0 0 0 1%;
+        font-size: 1em;
+    }
+
+    nav {
+        margin: 0 0 1% 1%;
+    }
+
+    nav h2 {
+        margin: 3% 0 3% 1%;
+    }
+
+    h1 {
+        margin: 4% 0 4% 27%;
+        font-size: 2.5em;
+    }
+
+    .fixed {
+        position: fixed;
+        z-index: 3;
+    }
+
+    .header {
+        margin: 0 6% 3% 1%;
+        width: 97%;
+        height: 800px;
+    }
+
+    .header img {
+        margin: 7% 1% 69% 21%;
+        display: block;
+        align-items: center;
+    }
+
+    .headerTexto p {
+        display: flex;
+        margin: 215% 87% -211% -389%;
+    }
+
+    .ingredientes {
+        margin: 220% 72% -34% -406%;
+    }
+
+    .pasos {
+        margin: 3% 2% 3% 1%;
+    }
+
+    footer {
+        margin: 8% 0 0 -1%;
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width:480px) {
+    .donations {
+        margin: 0 0 0 5%;
+        font-size: 1em;
+    }
+
+    nav {
+        margin: 0 0 0 5%;
+    }
+
+    nav img {
+        margin: 0 1% 2% 1%;
+    }
+
+    nav h2 {
+        margin: 5% 0 5% -1%;
+    }
+
+    h1 {
+        margin: 4% 0 4% 6%;
+        font-size: 2.3em;
+    }
+
+    .fixed {
+        margin: 1% 1% 1% 5%;
+        width: 75%;
+        position: fixed;
+        z-index: 3;
+    }
+
+    .header {
+        margin: 0 6% 3% -1%;
+        width: 106%;
+        height: 682px;
+    }
+
+    .header img {
+        margin: 7% 1% 95% 21%;
+        display: block;
+        align-items: center;
+    }
+
+    .headerTexto p {
+        display: flex;
+        margin: 157% 87% -149% -301%;
+        font-size: 0.8em;
+    }
+
+    .ingredientes {
+        margin: 151% 70% -34% -322%;
+        font-size: 0.8em;
+    }
+
+    .pasos {
+        margin: 7% -5% 7% 1%;
+        font-size: 0.8em;
+    }
+
+    footer {
+        margin: 8% 0 -2% -4%;
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width:360px) {
+    .donations {
+        margin: 0 -20% 0 8%;
+        font-size: 1em;
+    }
+
+    nav {
+        margin: 0 -20% 0 8%;
+    }
+
+    nav img {
+        margin: 0 1% 2% 1%;
+    }
+
+    nav h2 {
+        margin: 5% 0 5% -1%;
+    }
+
+    h1 {
+        margin: 5% 0 5% 9%;
+        font-size: 2em;
+    }
+
+    .fixed {
+        margin: 1% 1% 0 8%;
+        width: 70%;
+        position: fixed;
+        z-index: 3;
+    }
+
+    .header {
+        margin: 7% 0 0 4%;
+        width: 114%;
+        height: 585px;
+    }
+
+    .header img {
+        margin: 7% 1% 113% 22%;
+        display: block;
+        align-items: center;
+    }
+
+    .headerTexto p {
+        display: flex;
+        margin: 136% 90% -123% -251%;
+        font-size: 0.7em;
+    }
+
+    .ingredientes {
+        margin: 130% 94% -41% -276%;
+        font-size: 0.7em;
+    }
+
+    .pasos {
+        margin: 9% -18% 9% 4%;
+        font-size: 0.7em;
+    }
+
+    footer {
+        margin: 1% 0 1% -4%;
+        font-size: 0.5em;
+    }
+}
